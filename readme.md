@@ -115,6 +115,25 @@ disable=SC1090
 disable=SC1091
 ```
 
+### `.stylelintrc.yaml`
+
+This config turns on the standard scss config, which is a superset of the stnaic css config and
+compatible whether you use scss or not.
+
+Stylelint does require you to install plugins locally though:
+
+```bash
+npm install --save-dev stylelint stylelint-config-standard-scss stylelint-config-prettier
+```
+
+This config also uses `stylelint-config-prettier`, which turns off all formatting rules which
+prettier takes care of. Since you'll be enabling prettier, you don't need to hear about formatting
+issues that prettier will take care of.
+
+Note: In `trunk.yaml` you'll want to enable both `stylelint-fmt` and `stylelint`. The former
+automatically fixes what stylelint supports automatic fixes for, and runs via `trunk check` and
+`trunk fmt`. The latter is for issues without autofixes.
+
 ## What's the best way to run linters and formatters?
 
 [Trunk](https://trunk.io/) 🎉 ([docs](https://docs.trunk.io) •
