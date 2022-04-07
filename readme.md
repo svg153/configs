@@ -7,9 +7,6 @@
 <h2 align="center">Trunk Configs</h2>
 <h3 align="center">Clean default configs for linters, formatters, and more</h2>
 <p align="center">
-  <a href="https://trunk.io">
-    <img src="https://github.com/trunk-io/trunk-action/actions/workflows/pr.yaml/badge.svg"/>
-  </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=Trunk.io">
     <img src="https://img.shields.io/visual-studio-marketplace/i/Trunk.io?logo=visualstudiocode"/>
   </a>
